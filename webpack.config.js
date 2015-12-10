@@ -30,7 +30,7 @@ var loaders = [
 
 module.exports = {
   name: 'app',
-  target: 'node',
+  target: 'web',
   entry: {
     main: './src/dialog.module.js',
   },
@@ -38,6 +38,10 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'index.js',
     chunkFilename: '[name].chunk.js',
+    library: 'mDialog',
+  },
+  externals: {
+    'angular': 'angular',
   },
   module: {
     loaders: loaders,
