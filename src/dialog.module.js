@@ -6,3 +6,6 @@ var mDialog = angular.module('mDialog', [])
   .service('Dialog', DialogService)
   .name;
 
+console.log(mDialog);
+
+export default mDialog;
