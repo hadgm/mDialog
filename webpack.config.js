@@ -39,6 +39,7 @@ module.exports = {
     filename: 'index.js',
     chunkFilename: '[name].chunk.js',
     library: 'mDialog',
+    libraryTarget: 'umd',
   },
   externals: {
     'angular': 'angular',

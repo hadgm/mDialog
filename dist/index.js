@@ -1,5 +1,14 @@
-var mDialog =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("angular"));
+	else if(typeof define === 'function' && define.amd)
+		define(["angular"], factory);
+	else if(typeof exports === 'object')
+		exports["mDialog"] = factory(require("angular"));
+	else
+		root["mDialog"] = factory(root["angular"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -65,15 +74,13 @@ var mDialog =
 
 	var mDialog = _angular2.default.module('mDialog', []).service('Dialog', _DialogService2.default).name;
 
-	console.log(mDialog);
-
 	exports.default = mDialog;
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = angular;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
 /***/ },
 /* 2 */
@@ -625,4 +632,6 @@ var mDialog =
 	module.exports = "<div class=\"dialog-container\"></div>\n"
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;
