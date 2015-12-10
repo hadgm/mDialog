@@ -30,7 +30,7 @@ var loaders = [
 
 module.exports = {
   name: 'app',
-  target: 'web',
+  target: 'node',
   entry: {
     main: './src/dialog.module.js',
   },
