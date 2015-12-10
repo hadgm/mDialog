@@ -1,0 +1,1 @@
+Small angular dialog module, no dependencies, except angular, of course

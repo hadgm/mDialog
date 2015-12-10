@@ -1,0 +1,56 @@
+$white: #fff;
+
+.dialog-backdrop{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparentize(darken($white, 85%), 0.05);
+  z-index: 10;
+}
+
+.dialog-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-pane{
+  width: 50%;
+  max-width: 40em;
+  background: $white;
+  min-height: 5em;
+  box-shadow: 0px 10px 35px 2px transparentize(darken($white, 100%), 0.4);
+  border-radius: 3px;
+}
+$dialog-header-bg: darken($white, 20%);
+
+.dialog__header{
+  background-color: $dialog-header-bg;
+
+  .dialog__header__inner {
+    padding: 1em;
+  }
+
+  h2, h3 {
+    margin-bottom: 1rem;
+  }
+
+}
+.dialog__footer{
+  border-top: 1px solid darken($white, 10%);
+  padding: 0.5em;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+}
+.dialog__body {
+  padding: 1em;
+}
+
+form{
+  margin: 0;
+}
