@@ -47,10 +47,6 @@ var mDialog =
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _angular = __webpack_require__(1);
 
 	var _angular2 = _interopRequireDefault(_angular);
@@ -63,7 +59,7 @@ var mDialog =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _angular2.default.module('mDialog', []).service('Dialog', _DialogService2.default).name;
+	var mDialog = _angular2.default.module('mDialog', []).service('Dialog', _DialogService2.default).name;
 
 /***/ },
 /* 1 */
